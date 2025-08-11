@@ -8,3 +8,8 @@ let album: String = "Reputation"
 let year: Int = 1989
 let height: Double = 1.78
 let taylorRocks: Bool = true
+
+print(type(of: album))
+type(of: year)
+type(of: height)
+type(of: taylorRocks)

@@ -46,6 +46,9 @@ var dict1 = Dictionary<String, Int>()
 var arr1 = Array<Int>()
 
 // Enums
+enum Direction {
+    case north, south, east, west
+}
 
 enum Result {
     case success
@@ -63,6 +66,27 @@ enum Activity {
 }
 
 let talking = Activity.talking(topic: "Football")
+
+enum WeatherType {
+    case rain
+    case sun
+    case cloud
+    case wind(speed: Int)
+    case snow
+}
+
+func getHaterStatus(weather: WeatherType) -> String? {
+    switch weather {
+    case .sun:
+        return "Happy"
+    case .wind(let speed) where speed < 10:
+        return "Unhappy"
+    case .snow, .wind:
+        return "Angry"
+    case .rain, .cloud:
+        return "Hate"
+    }
+}
 
 // Enum raw value
 
