@@ -91,7 +91,7 @@ case "snow":
     print("Wrap up warm")
 case "sunny":
     print("Wear sunscreen")
-    fallthrough // only if you want to execute the code for coming cases
+    fallthrough // only if you want to execute the code for coming case
 default:
     print("Enjoy your day!")
 }
