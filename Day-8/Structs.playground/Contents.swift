@@ -48,6 +48,7 @@ progress.amount = 50
 progress.amount = 100
 
 // "willSet" to take action before a property changes
+// willSet gives us newValue variable whereas didSet gives us oldValue variable
 
 // Methods
 // functions inside structs are called methods
